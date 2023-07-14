@@ -30,18 +30,18 @@
 
 
 
-# 📖 [AWESOME BOOKS] <a name="about-project"></a>
+# 📖 [BOOKSTORE REACT APP] <a name="about-project"></a>
 
 **[Bookstore]** is a simple project which is made using React JS and it is adding, removing and storing the books into the local storage of the browser.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 - React js
-- Vite
+
 
 ### Tech Stack <a name="tech-stack"></a>
 
-This project is created using React JS and Vite.
+This project is created using React JS .
 
 
 
