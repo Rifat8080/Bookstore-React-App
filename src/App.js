@@ -1,25 +1,20 @@
-import React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
-import Nav from './components/Nav';
-import Books from './components/Books';
-import './index.css';
-import Categories from './components/Categories';
+import { Routes, Route } from 'react-router-dom';
+import Home from './routes/Home';
+import Categories from './routes/Categories';
+import Navbar from './components/Navbar';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="books-container">
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="/Categories" element={<Categories />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </>
+
   );
 }
 

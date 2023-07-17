@@ -1,40 +1,45 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const initialState = {
+  books: [
+    {
+      item_id: 'item1',
+      title: 'The Great Gatsby',
+      author: 'John Smith',
+      category: 'Fiction',
+    },
+    {
+      item_id: 'item2',
+      title: 'Anna Karenina',
+      author: 'Leo Tolstoy',
+      category: 'Fiction',
+    },
+    {
+      item_id: 'item3',
+      title: 'The Selfish Gene',
+      author: 'Richard Dawkins',
+      category: 'Nonfiction',
+    },
+  ],
+};
+
 const bookSlice = createSlice({
-  name: 'books',
-  initialState: {
-    books: [],
-    filteredBooks: [],
-    categories: ['Fiction', 'Non-Fiction', 'Science', 'Fantasy'],
-    selectedCategory: null,
-  },
+  name: 'book',
+  initialState,
   reducers: {
-    addBook: (state, action) => {
-      const book = action.payload;
-      state.books.push(book);
-      if (state.selectedCategory === null || state.selectedCategory === book.category) {
-        state.filteredBooks.push(book);
-      }
-    },
+    addBook: (state, action) => ({
+      ...state,
+      books: [...state.books, action.payload],
+    }),
     removeBook: (state, action) => {
-      const bookId = action.payload;
-      state.books = state.books.filter(
-        (book) => book.id !== bookId,
-      );
-      state.filteredBooks = state.filteredBooks.filter(
-        (book) => book.id !== bookId,
-      );
-    },
-    setCategoryFilter: (state, action) => {
-      const selectedCategory = action.payload;
-      state.selectedCategory = selectedCategory;
-      state.filteredBooks = state.books.filter(
-        (book) => selectedCategory === null || book.category === selectedCategory,
-      );
+      const itemId = action.payload;
+      return {
+        ...state,
+        books: state.books.filter((book) => book.item_id !== itemId),
+      };
     },
   },
 });
 
-export const { addBook, removeBook, setCategoryFilter } = bookSlice.actions;
-
+export const { removeBook, addBook } = bookSlice.actions;
 export default bookSlice.reducer;
