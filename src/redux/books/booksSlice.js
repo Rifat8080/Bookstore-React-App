@@ -5,48 +5,32 @@ const bookSlice = createSlice({
   initialState: {
     books: [],
     filteredBooks: [],
-    categories: ['Fiction', 'Non-Fiction', 'Science', 'Fantasy'], // Hardcoded list of categories
+    categories: ['Fiction', 'Non-Fiction', 'Science', 'Fantasy'],
     selectedCategory: null,
   },
   reducers: {
     addBook: (state, action) => {
-      state.books.push(action.payload);
-      if (
-        state.selectedCategory === null
-        || state.selectedCategory === action.payload.category
-      ) {
-        state.filteredBooks.push(action.payload);
+      const book = action.payload;
+      state.books.push(book);
+      if (state.selectedCategory === null || state.selectedCategory === book.category) {
+        state.filteredBooks.push(book);
       }
     },
     removeBook: (state, action) => {
-      const bookIndex = state.books.findIndex(
-        (book) => book.id === action.payload,
+      const bookId = action.payload;
+      state.books = state.books.filter(
+        (book) => book.id !== bookId,
       );
-      if (bookIndex !== -1) {
-        const bookToRemove = state.books[bookIndex];
-        state.books.splice(bookIndex, 1);
-        if (
-          state.selectedCategory === null
-          || state.selectedCategory === bookToRemove.category
-        ) {
-          const filteredBookIndex = state.filteredBooks.findIndex(
-            (book) => book.id === action.payload,
-          );
-          if (filteredBookIndex !== -1) {
-            state.filteredBooks.splice(filteredBookIndex, 1);
-          }
-        }
-      }
+      state.filteredBooks = state.filteredBooks.filter(
+        (book) => book.id !== bookId,
+      );
     },
     setCategoryFilter: (state, action) => {
-      state.selectedCategory = action.payload;
-      if (action.payload === null) {
-        state.filteredBooks = state.books;
-      } else {
-        state.filteredBooks = state.books.filter(
-          (book) => book.category === action.payload,
-        );
-      }
+      const selectedCategory = action.payload;
+      state.selectedCategory = selectedCategory;
+      state.filteredBooks = state.books.filter(
+        (book) => selectedCategory === null || book.category === selectedCategory,
+      );
     },
   },
 });

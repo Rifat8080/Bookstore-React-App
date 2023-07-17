@@ -7,10 +7,15 @@ const categorySlice = createSlice({
     status: 'Under construction',
   },
   reducers: {
+    checkStatus: (state, action) => {
+      state.categories = action.payload === 'Under construction'
+        ? 'Under construction'
+        : state.categories;
+    },
     getCategoryStatus: (state) => state.status,
   },
 });
 
-export const { getCategoryStatus } = categorySlice.actions;
+export const { checkStatus, getCategoryStatus } = categorySlice.actions;
 
 export default categorySlice.reducer;
