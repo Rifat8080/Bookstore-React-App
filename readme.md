@@ -126,7 +126,7 @@ I will deployed this project using: Github pages
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Chandan-devs-tech/Bookstore-React-App/issues).
+Feel free to check the [issues page](https://github.com/Rifat8080/Bookstore-React-App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,6 +149,6 @@ I would like to thank [Microverse](https://www.microverse.org/go)
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Chandan-devs-tech/Awesome-books/blob/feature/withObjects/MIT.md) licensed.
+This project is [MIT](https://github.com/Rifat8080/Bookstore-React-App/blob/Connect-react-reduct/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
