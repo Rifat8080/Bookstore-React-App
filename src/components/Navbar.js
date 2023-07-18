@@ -1,4 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import '../styles/Nav.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const Navbar = () => (
   <div className="container">

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
+import '../styles/AddBook.css';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
@@ -18,6 +19,7 @@ const AddBook = () => {
     dispatch(addBook(newBook));
     setAuther('');
     setTitle('');
+    setCategory('');
   };
   return (
     <>
