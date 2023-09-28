@@ -1,3 +1,9 @@
+hr {
+  border: 1px solid #000;
+  margin-left: 3.5%;
+  width: 93%;
+}
+
 .Title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
@@ -7,6 +13,14 @@
   line-height: normal;
   letter-spacing: -0.18px;
   color: #888;
+}
+
+.Title.Text-Style-12 {
+  margin-left: -7.5%;
+}
+
+.form-control {
+  margin-left: -22%;
 }
 
 .add {
@@ -22,6 +36,7 @@
   text-align: center;
   color: var(--white-two);
   border: none;
+  margin-left: 52%;
 }
 
 .Remove {
