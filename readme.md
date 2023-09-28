@@ -2,11 +2,9 @@
 
 <div align="center">
 
-  <h3><b>Bookstore React App</b></h3>
+  <h3><b>Bookstore React App V2 </b></h3>
 
 </div>
-
-
 
 # 📗 Table of Contents
 
@@ -28,8 +26,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
-
 # 📖 [BOOKSTORE REACT APP] <a name="about-project"></a>
 
 **[Bookstore]** is a simple project which is made using React JS and it is adding, removing and storing the books into the local storage of the browser.
@@ -38,12 +34,9 @@
 
 - React js
 
-
 ### Tech Stack <a name="tech-stack"></a>
 
 This project is created using React JS .
-
-
 
 ### Key Features <a name="key-features"></a>
 
@@ -53,14 +46,11 @@ This project is created using React JS .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://rifat8080.github.io/Bookstore-React-App/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -94,6 +84,7 @@ Install this project with:
 ### Run tests
 
 To run tests, run the following command:
+
 - npm test
 
 ### Deployment
@@ -101,7 +92,6 @@ To run tests, run the following command:
 I will deployed this project using: Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -113,14 +103,11 @@ I will deployed this project using: Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Awesome books: with Redux js]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -130,22 +117,17 @@ Feel free to check the [issues page](https://github.com/Rifat8080/Bookstore-Reac
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project give me a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [Microverse](https://www.microverse.org/go)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
