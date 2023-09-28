@@ -23,15 +23,13 @@ const AddBook = () => {
   };
   return (
     <>
+      <hr />
       <div className="container my-4">
-        <hr />
-        <h2 className="Title Text-Style-12 my-4">
-          ADD NEW BOOK
-        </h2>
+        <h2 className="Title Text-Style-12 my-4">ADD NEW BOOK</h2>
         <div className="row justify-content-center">
           <form>
             <div className="row align-items-center justify-content-center">
-              <div className="col-4">
+              <div className="col-4 booktitle">
                 <input
                   type="text"
                   className="form-control mb-2"
@@ -64,7 +62,13 @@ const AddBook = () => {
                 </div>
               </div>
               <div className="col-2">
-                <button type="button" className="w-100 p-3 mb-3 add" onClick={addNewBook}>Add Book</button>
+                <button
+                  type="button"
+                  className="w-100 p-3 mb-3 add"
+                  onClick={addNewBook}
+                >
+                  Add Book
+                </button>
               </div>
             </div>
           </form>
